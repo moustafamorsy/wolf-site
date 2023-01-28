@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto' ,serif;
+}
+
+header{
+  display: flex;
+ 
+  justify-content: center;
+  color: white;
+  /* background: url(/background.jpg) no-repeat center center    ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover ; */
+  background-color: black;
+  
+}
+
+#get-in-touch{
+    background: url(/shake.jpg) no-repeat center center    ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover ;
+}
+
+.mini-nav{
+  position: absolute;
+  background-color: white;
+  right: 0;
+  width: 150px;
+  height: 100vh ;
+}
+
+.line::after{
+  content: " ";
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #03A3FF;
+}
+
+.about{
+  background: url(/half-right.png) no-repeat top 10px left -400px ,url(/half-left.png) no-repeat bottom 10px right -400px    ; 
+ background-size: 50%;
+  background-size: auto;
+}
+
+.contact{
+  background: url(/half-right.png) no-repeat bottom 10px left -400px ,url(/half-left.png) no-repeat top 10px right -400px    ; 
+  background-size: 50%;
+   background-size: auto;
+}
+
+.form{
+  margin-top: -20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+::placeholder{
+  font-size: 11px;
+ text-align: center;
+}
+
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } 
+input:focus::-moz-placeholder { color:transparent; } 
+input:focus:-ms-input-placeholder { color:transparent; } 
