@@ -10,6 +10,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto' ,serif;
+  --swiper-theme-color:white;
+  --swiper-navigation-size: 22px;
 }
 
 header{
@@ -17,11 +19,11 @@ header{
  
   justify-content: center;
   color: white;
-  /* background: url(/background.jpg) no-repeat center center    ; 
+  background: url(/navbg.png) no-repeat center center    ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover ; */
+  background-size: cover ;
   background-color: black;
   
 }
@@ -33,7 +35,29 @@ header{
   -o-background-size: cover;
   background-size: cover ;
 }
-
+#testominal-container{
+  background: url(/bg.png) no-repeat center center    ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover ;
+}
+#testominal-card{
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+@media only screen and (max-width: 765px) {
+  #testominal-card{
+    top:60px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+  }
+}
 .mini-nav{
   position: absolute;
   background-color: white;
@@ -50,6 +74,18 @@ header{
   margin-top: 5px;
   background-color: #03A3FF;
 }
+.lineAB::after{
+  content: " ";
+  display: flex;
+  
+  width: 25px;
+  height: 3px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  margin-left: 50px ;
+  background-color: #03A3FF;
+}
+
 
 .about{
   background: url(/half-right.png) no-repeat top 10px left -400px ,url(/half-left.png) no-repeat bottom 10px right -400px    ; 
@@ -79,10 +115,13 @@ textarea {
   padding-right: 50px;
 }
 
+
 ::placeholder{
   font-size: 11px;
  text-align: center;
 }
+
+
 
 
 input:focus::-webkit-input-placeholder { color:transparent; }

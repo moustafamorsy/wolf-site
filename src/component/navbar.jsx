@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars , faX} from '@fortawesome/free-solid-svg-icons'
 
-function navbar({ children }) {
+function navbar({ children , language , lang}) {
  const [isOpen , setIsOpen] = useState(false);
 
   const activeLink = 'text-darkblue'
@@ -14,11 +14,14 @@ function openMenu() {
     <header className="header">
     <div id="content-container" className="container ">
         <div id="button-container" className="text-end relative md:flex sm:hidden">
-        <NavLink to='/contact'> <button className="border-2 border-borderColor w-fit text-center rounded font-semibold text-xs py-2.5 px-5  absolute top-6 right-0">
-         FREE CONSULTATION
+        <NavLink to='/contact'> <button  className="border-2 border-borderColor w-fit text-center rounded font-semibold text-xs py-2.5 px-5  absolute top-6 right-0">
+        { lang ? "FREE CONSULTATION" :
+        'استشارة مجانيه'
+        }
           </button></NavLink> 
         </div>
-        <nav className="flex justify-between items-center mt-9 md:flex sm:hidden">
+          {lang ? <button onClick={language}>عربى</button> : <button onClick={language}>ُEN</button>}
+        <nav className={lang ?"flex justify-between items-center mt-9 md:flex sm:hidden" : 'flex flex-row-reverse justify-between items-center mt-9 md:flex sm:hidden'}>
           <h3 className="font-medium">
             {" "}
             <NavLink
@@ -28,7 +31,7 @@ function openMenu() {
               }
             >
               {" "}
-              Home{" "}
+              {lang ?" Home" : 'الرئيسية'}{" "}
             </NavLink>{" "}
           </h3 >
           <h3 className="font-medium ">
@@ -39,10 +42,10 @@ function openMenu() {
               }
             >
               {" "}
-              About Us{" "}
+              {lang ?" About Us" : 'معلومات عنا'}{" "}
             </NavLink>
           </h3>
-          <img className="w-36" src="./LOGO t.png" alt="wolf-techonolgy" />
+          <img  className="w-36" src="./LOGO t.png" alt="wolf-techonolgy" />
           <h3 className="font-medium ">
             <NavLink
               to="/services"
@@ -51,7 +54,7 @@ function openMenu() {
               }
             >
               {" "}
-             Our Services{" "}
+             {lang ? 'Our Services' : 'الخدمات'}{" "}
             </NavLink>
           </h3>
           <h3 className="font-medium ">
@@ -62,7 +65,7 @@ function openMenu() {
               }
             >
               {" "}
-              Contact{" "}
+              {lang ? 'Contact' : 'تواصل معنا'} {" "}
             </NavLink>
           </h3>
         </nav> 
@@ -79,7 +82,7 @@ function openMenu() {
 
       {isOpen && <div className="mini-nav text-black p-5 md:hidden sm:visible">
       <FontAwesomeIcon onClick={openMenu} className='text-black text-1xl cursor-pointer absolute right-5' icon={faX} />
-      <h3 className="font-medium mb-3 mt-10">
+      <h3 className={lang ? "font-medium mb-3 mt-10" : "font-medium mb-3 mt-10 text-right" }>
             {" "}
             <NavLink
               to="/"
@@ -88,10 +91,10 @@ function openMenu() {
               }
             >
               {" "}
-              Home{" "}
+              {lang ?" Home" : 'الرئيسية'}{" "}
             </NavLink>{" "}
           </h3 >
-          <h3 className="font-medium mb-3">
+          <h3 className={lang ? "font-medium mb-3 mt-10" : "font-medium mb-3 mt-10 text-right" }>
             <NavLink
               to="/about"
               className={({ isActive }) =>
@@ -99,10 +102,10 @@ function openMenu() {
               }
             >
               {" "}
-              About Us{" "}
+              {lang ?" About Us" : 'معلومات عنا'}{" "}
             </NavLink>
           </h3>
-          <h3 className="font-medium mb-3">
+          <h3 className={lang ? "font-medium mb-3 mt-10" : "font-medium mb-3 mt-10 text-right" }>
             <NavLink
               to="/services"
               className={({ isActive }) =>
@@ -110,10 +113,10 @@ function openMenu() {
               }
             >
               {" "}
-             Our Services{" "}
+              {lang ? 'Our Services' : 'الخدمات'}{" "}
             </NavLink>
           </h3>
-          <h3 className="font-medium mb-3">
+          <h3 className={lang ? "font-medium mb-3 mt-10" : "font-medium mb-3 mt-10 text-right" }>
             <NavLink
               to="/contact"
               className={({ isActive }) =>
@@ -121,7 +124,7 @@ function openMenu() {
               }
             >
               {" "}
-              Contact{" "}
+              {lang ? 'Contact' : 'تواصل معنا'}{" "}
             </NavLink>
           </h3>
       </div>}
