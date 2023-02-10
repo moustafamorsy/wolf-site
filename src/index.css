@@ -10,8 +10,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto' ,serif;
-  --swiper-theme-color:white;
+  --swiper-theme-color:rgb(0, 0, 0);
   --swiper-navigation-size: 22px;
+
+}
+
+body{
+  background-color: #365C7E;
 }
 
 header{
@@ -35,28 +40,16 @@ header{
   -o-background-size: cover;
   background-size: cover ;
 }
-#testominal-container{
+
+.swiper {
+  margin-top: -15px !important;
+}
+.Testimonial{
   background: url(/bg.png) no-repeat center center    ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover ;
-}
-#testominal-card{
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-@media only screen and (max-width: 765px) {
-  #testominal-card{
-    top:60px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    
-  }
 }
 .mini-nav{
   position: absolute;
@@ -88,13 +81,18 @@ header{
 
 
 .about{
+
   background: url(/half-right.png) no-repeat top 10px left -400px ,url(/half-left.png) no-repeat bottom 10px right -400px    ; 
+  background-color: white;
  background-size: 50%;
   background-size: auto;
 }
 
+
+
 .contact{
   background: url(/half-right.png) no-repeat bottom 10px left -400px ,url(/half-left.png) no-repeat top 10px right -400px    ; 
+  background-color: white;
   background-size: 50%;
    background-size: auto;
 }

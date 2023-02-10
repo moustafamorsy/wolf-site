@@ -25,7 +25,9 @@ function Home({lang , language}) {
      
      </Navbar>
 
-{  lang ?     <div className='container flex md:justify-between sm:justify-center items-center  pt-10 mt-5 mb-10'>
+{  lang ?  
+<div className='bg-white'>
+<div className=' container flex md:justify-between sm:justify-center items-center  pt-10 mt-5 mb-10'>
        <div className='sm:text-center md:text-left md:w-fit sm:w-screen md:block sm:flex sm:flex-col sm:items-center'>
        <p className='text-lightblue md:mb-0 sm:mb-1'> Who we are </p> 
         <h2 className='md:w-80 sm:w-72 text-darkblue md:text-3xl sm:text-2xl font-semibold'>Custom IT solution for your business.</h2>
@@ -38,9 +40,11 @@ Learn more </button></NavLink>
       <img className='w-80 md:block sm:hidden' src="/it-main.jpg" alt="it enigneering doing maintiance" />
       </div>
       </div> 
+      </div>
       :
 // arabic part
-       <div className='container  flex flex-row-reverse md:justify-between sm:justify-center items-center  pt-10 mt-5 mb-10'>
+<div className='bg-white'>
+       <div className='container flex flex-row-reverse md:justify-between sm:justify-center items-center  pt-10 mt-5 mb-10'>
        <div className='sm:text-center md:text-right md:w-fit sm:w-screen md:block sm:flex sm:flex-col sm:items-center '>
        <p className='text-lightblue md:mb-0 sm:mb-1'> من نحن </p> 
         <h2 className='md:w-80 sm:w-72 text-darkblue md:text-3xl sm:text-2xl font-semibold'>حلول تكنولوجيا تناسب عملك الخاص</h2>
@@ -51,6 +55,7 @@ Learn more </button></NavLink>
        </div>
       <div className=''>
       <img className='w-80 md:block sm:hidden' src="/it-main.jpg" alt="it enigneering doing maintiance" />
+      </div>
       </div>
       </div>
       }
@@ -99,8 +104,8 @@ Learn more </button></NavLink>
  <Testimonials lang={lang} />
  <Get lang={lang} />
  <Footer lang={lang} />
-      <div className='text-center text-sm'>
-        <p className='text-gray'>Wolf Technology 2023 © All Rights Reserved.</p>
+      <div className='text-center text-sm bg-white'>
+        <p className='text-gray font-semibold'>Wolf Technology 2023 © All Rights Reserved.</p>
       </div>
       <TopPage />
     </div>

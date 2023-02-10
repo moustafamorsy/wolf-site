@@ -24,7 +24,7 @@ function services({lang , language}) {
      {lang ? "Get in touch" : "تواصل معنا"} </button></NavLink>
       </div>
      </Navbar>
-     <div className='text-center flex flex-col items-center p-10'>
+     <div className='bg-white text-center flex flex-col items-center p-10'>
       <p className='w-60 text-darkblue mb-5 font-semibold '>{lang ?' Custom IT solutions for your business' : 'حلول تكنولوجيا تناسب عملك الخاص'}</p>
       <p className='md:w-128 sm:96'>{lang ? "There’s a process involved in creating  your Technical Support solutions to make sure we meet your business goals. That process involves  getting to know your business, and what you want to accomplish then delivering the best solutions that fit your needs." : 'هناك عملية متضمنة في إنشاء حلول الدعم الفني للتأكد من أننا نلبي أهداف عملك. تتضمن هذه العملية التعرف على عملك ، وما تريد تحقيقه ، ثم تقديم أفضل الحلول التي تناسب احتياجاتك.'}</p>
      </div>
@@ -42,8 +42,8 @@ function services({lang , language}) {
  </div>
       <Get  lang={lang} />
  <Footer  lang={lang} />
-      <div className='text-center text-sm'>
-        <p className='text-gray'>Wolf Technology 2023 © All Rights Reserved.</p>
+ <div className='text-center text-sm bg-white'>
+        <p className='text-gray font-semibold'>Wolf Technology 2023 © All Rights Reserved.</p>
       </div>
 
       <TopPage />

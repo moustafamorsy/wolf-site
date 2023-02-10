@@ -44,7 +44,7 @@ function about({lang , language}) {
 </div>
  :
  // arabic
- <div className='about   flex flex-col items-center pt-20'>
+ <div className=' about   flex flex-col items-center pt-20'>
 <div className='container  flex justify-between items-center md:mb-40 sm:mb-10 md:flex-row sm:flex-col'>
   <div className='relative md:w-80 sm:w-72 md:h-80 sm:h-72 border-2 border-line'>
 <img className=' absolute  md:w-80 sm:w-72 md:h-80 sm:h-72 left-5 top-3 ' src="./meeting.jpg" alt="close-up-businesspeople-working-with-document" />
@@ -104,8 +104,8 @@ function about({lang , language}) {
       
       <Get lang={lang} />
  <Footer lang={lang} />
-      <div className='text-center text-sm'>
-        <p className='text-gray'>Wolf Technology 2023 © All Rights Reserved.</p>
+ <div className='text-center text-sm bg-white'>
+        <p className='text-gray font-semibold'>Wolf Technology 2023 © All Rights Reserved.</p>
       </div>
       <TopPage />
       </div>

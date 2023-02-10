@@ -20,8 +20,8 @@ function openMenu() {
         }
           </button></NavLink> 
         </div>
-          {lang ? <button onClick={language}>عربى</button> : <button onClick={language}>ُEN</button>}
-        <nav className={lang ?"flex justify-between items-center mt-9 md:flex sm:hidden" : 'flex flex-row-reverse justify-between items-center mt-9 md:flex sm:hidden'}>
+          {lang ? <button className="mt-5" onClick={language}>عربى</button> : <button className="mt-5" onClick={language}>ُEN</button>}
+        <nav className={lang ?"flex justify-between items-center  md:flex sm:hidden" : 'flex flex-row-reverse justify-between items-center  md:flex sm:hidden'}>
           <h3 className="font-medium">
             {" "}
             <NavLink
@@ -70,7 +70,7 @@ function openMenu() {
           </h3>
         </nav> 
 
-        <nav className="flex justify-between items-center mt-9 md:hidden sm:flex">
+        <nav className="flex justify-between items-center mt-4 md:hidden sm:flex">
         <img className="w-36" src="./LOGO t.png" alt="wolf-techonolgy" />
         <FontAwesomeIcon onClick={openMenu} className='text-white text-3xl cursor-pointer' icon={faBars} />
         </nav>

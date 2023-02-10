@@ -19,7 +19,7 @@ function contact({lang , language}) {
      </Navbar>
 
      <div className='contact'>
-     <div className='text-center mt-10'>
+     <div className='text-center pt-10'>
       <h2 className='text-darkblue font-semibold text-xl' >{lang ?'Get in Touch!' : 'تواصل معنا'}</h2>
       <p className='text-darkblue text-sm'>{lang ? 'we will reach out to you soon.' : 'سنتواصل معك فى اقرب وقت ممكن'}</p>
      </div>
@@ -57,8 +57,8 @@ function contact({lang , language}) {
 
       <Get lang={lang} />
  <Footer lang={lang} />
-      <div className='text-center text-sm'>
-        <p className='text-gray'>Wolf Technology 2023 © All Rights Reserved.</p>
+ <div className='text-center text-sm bg-white'>
+        <p className='text-gray font-semibold'>Wolf Technology 2023 © All Rights Reserved.</p>
       </div>
       <TopPage />
       </div>

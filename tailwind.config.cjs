@@ -12,9 +12,11 @@ module.exports = {
       width: {
         '128': '40rem',
         '1064': '66.5rem',
+        '108': '28rem',
       },
       height:{
         '108': '28rem',
+        '128': '40rem',
       },
       colors:{
         darkblue: '#054970',
