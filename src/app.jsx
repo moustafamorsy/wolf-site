@@ -8,7 +8,7 @@ import ErrorPage from "./component/error-page";
 
 function app() {
 
-  const [show , setShow] = useState(false)
+  const [show , setShow] = useState(true)
 
 
 

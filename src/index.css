@@ -24,7 +24,7 @@ header{
  
   justify-content: center;
   color: white;
-  background: url(/navbg.png) no-repeat center center    ; 
+  background: url(/navbg.webp) no-repeat center center    ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +34,7 @@ header{
 }
 
 #get-in-touch{
-    background: url(/shake.jpg) no-repeat center center    ; 
+    background: url(/shake.webp) no-repeat center center    ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -45,7 +45,7 @@ header{
   margin-top: -15px !important;
 }
 .Testimonial{
-  background: url(/bg.png) no-repeat center center    ; 
+  background: url(/bg.webp) no-repeat center center    ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,7 +82,7 @@ header{
 
 .about{
 
-  background: url(/half-right.png) no-repeat top 10px left -400px ,url(/half-left.png) no-repeat bottom 10px right -400px    ; 
+  background: url(/half-right.webp) no-repeat top 10px left -400px ,url(/half-left.webp) no-repeat bottom 10px right -400px    ; 
   background-color: white;
  background-size: 50%;
   background-size: auto;
@@ -91,7 +91,7 @@ header{
 
 
 .contact{
-  background: url(/half-right.png) no-repeat bottom 10px left -400px ,url(/half-left.png) no-repeat top 10px right -400px    ; 
+  background: url(/half-right.webp) no-repeat bottom 10px left -400px ,url(/half-left.webp) no-repeat top 10px right -400px    ; 
   background-color: white;
   background-size: 50%;
    background-size: auto;

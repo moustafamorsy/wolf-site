@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-function Testimonials() {
+function Testimonials({lang}) {
   return (
     <>
     <div className="Testimonial text-white text-center p-6 ">
@@ -32,16 +32,29 @@ function Testimonials() {
       >
       
         <SwiperSlide> 
-        <div className="flex items-center  md:flex-row sm:flex-col">
-         <img className=" md:w-128 sm:w-full h-72" src="./person.jpg" alt="" />
-      
+      {lang ?  <div className="flex items-center  md:flex-row sm:flex-col">
+          <div className=" md:w-128 sm:w-full h-72 flex flex-col justify-center ">
+         <img className="w-fit " src="./share.webp" alt="shr-connect" />
+         </div>
         <div className="p-5"> 
-          <p className="mb-10">“It was a no brainer for us to have i.t.NOW help us with our IT. They treat us like family. It takes a huge load off to have their support.”</p>
-          <h3>maxiual max , companyowner</h3>
+          <p className="mb-8">“They provided us with the best service and efficient communication and helped us to secure and maintain our IT structure. They have good customer service. Their team is always there whenever we need them.”</p>
+         <a href="https://www.facebook.com/shrconnect" target='_blank'><h3 className="text-darkblue">Shr connect</h3></a>
           </div>
         </div>
+      :
+      <div className="flex items-center  md:flex-row sm:flex-col">
+      <div className=" md:w-128 sm:w-full h-72 flex flex-col justify-center ">
+     <img className="w-fit " src="./share.webp" alt="shr-connect" />
+     </div>
+    <div className="p-5"> 
+      <p className="mb-8 text-right">“لقد قدموا لنا أفضل خدمة واتصالات فعالة وساعدونا في تأمين وصيانة هيكل تكنولوجيا المعلومات لدينا. لديهم خدمة عملاء جيدة. فريقهم موجود دائمًا كلما احتجنا إليهم.”</p>
+     <a href="https://www.facebook.com/shrconnect" target='_blank'><h3 className="text-darkblue text-right">Shr connect</h3></a>
+      </div>
+    </div>
+
+      }
       </SwiperSlide>
- 
+
       </Swiper>
 
       </div>

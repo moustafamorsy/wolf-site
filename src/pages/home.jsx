@@ -18,7 +18,7 @@ function Home({lang , language}) {
      <Navbar lang={lang} language={language}>
       <div className={lang ? '' : 'flex flex-col items-end text-right'}>
    <h1 className='mt-11 md:w-96 sm:w-72 text-3xl sm:text-2xl font-semibold'>{lang ? 'IT Support , IT Services & IT Consultant' : "دعم تكنولوجيا المعلومات وخدمات تكنولوجيا المعلومات واستشاري تكنولوجيا المعلومات"}</h1>
-      <p  className='my-5 md:w-80 sm:w-72 font-normal '> {lang ? 'We are working with our customers to help them plan, build, support, and manage their IT infrastructure.' : "نحن نعمل مع عملائنا لمساعدتهم على تخطيط وبناء ودعم وإدارة البنية التحتية لتكنولوجيا المعلومات الخاصة بهم."}</p>
+      <p  className='my-5 md:w-80 sm:w-72 font-normal '> {lang ? 'We work with our customers to help them plan, build, support, and manage their IT infrastructure.' : "نحن نعمل مع عملائنا لمساعدتهم على تخطيط وبناء ودعم وإدارة البنية التحتية لتكنولوجيا المعلومات الخاصة بهم."}</p>
       <NavLink  to='/contact'><button  className={'border-borderColor py-1.5 px-3 font-semibold  border-2 mb-10   rounded'}>
      {lang ? "Get in touch" : "تواصل معنا"} </button></NavLink> 
      </div>
@@ -31,13 +31,13 @@ function Home({lang , language}) {
        <div className='sm:text-center md:text-left md:w-fit sm:w-screen md:block sm:flex sm:flex-col sm:items-center'>
        <p className='text-lightblue md:mb-0 sm:mb-1'> Who we are </p> 
         <h2 className='md:w-80 sm:w-72 text-darkblue md:text-3xl sm:text-2xl font-semibold'>Custom IT solution for your business.</h2>
-        <p className='w-64 my-6 text-sm'> <span className='text-text font-semibold'>Wolf Technology</span> offers IT services and products including , Servers Laptops , PCs , Networking , Security & ets.
+        <p className='w-64 my-6 text-sm'> <span className='text-text font-semibold'>Wolf Technology</span> offers IT services and products, Servers, Laptops, PCs, Networking, Security, and other services.
 </p>
 <NavLink to='/about'><button  className='border-borderColor py-1.5 px-3 font-semibold  border-2 mb-10 rounded'>
 Learn more </button></NavLink> 
        </div>
       <div className=''>
-      <img className='w-80 md:block sm:hidden' src="/it-main.jpg" alt="it enigneering doing maintiance" />
+      <img className='w-80 md:block sm:hidden' src="/it-main.webp" alt="it enigneering doing maintiance" />
       </div>
       </div> 
       </div>
@@ -54,7 +54,7 @@ Learn more </button></NavLink>
 تعرف اكثر</button></NavLink> 
        </div>
       <div className=''>
-      <img className='w-80 md:block sm:hidden' src="/it-main.jpg" alt="it enigneering doing maintiance" />
+      <img className='w-80 md:block sm:hidden' src="/it-main.webp" alt="it enigneering doing maintiance" />
       </div>
       </div>
       </div>

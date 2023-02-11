@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot , faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faSquareFacebook , faLinkedin} from '@fortawesome/free-brands-svg-icons'
 function footer({lang}) {
-  const activeLink = 'text-darkblue'
+  const activeLink = 'text-blue-400'
   return (
     <>
    { lang ? <div className='bg-bg flex justify-evenly items-start text-white pt-5'>
       <div className='mb-10'>
-        <img className="w-36 ml-3" src="./LOGO t.png" alt="wolf techonolgy logo" />
+        <img className="w-36 ml-3" src="./LOGO t.webp" alt="wolf techonolgy logo" />
         <div className='flex items-center'>
         <FontAwesomeIcon className='mr-1'  icon={faLocationDot} />
         <p className='w-36 text-center my-1 text-sm'>Cairo , Nasr City, Unit NO. 175 in Property NO.  Wahdan Street</p>

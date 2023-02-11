@@ -6,7 +6,7 @@ import { faBars , faX} from '@fortawesome/free-solid-svg-icons'
 function navbar({ children , language , lang}) {
  const [isOpen , setIsOpen] = useState(false);
 
-  const activeLink = 'text-darkblue'
+  const activeLink = 'text-blue-400'
 function openMenu() {
   setIsOpen(prevIsOpen => !prevIsOpen)
 }
@@ -45,7 +45,7 @@ function openMenu() {
               {lang ?" About Us" : 'معلومات عنا'}{" "}
             </NavLink>
           </h3>
-          <img  className="w-36" src="./LOGO t.png" alt="wolf-techonolgy" />
+          <img  className="w-36" src="./LOGO t.webp" alt="wolf-techonolgy" />
           <h3 className="font-medium ">
             <NavLink
               to="/services"
@@ -71,7 +71,7 @@ function openMenu() {
         </nav> 
 
         <nav className="flex justify-between items-center mt-4 md:hidden sm:flex">
-        <img className="w-36" src="./LOGO t.png" alt="wolf-techonolgy" />
+        <img className="w-36" src="./LOGO t.webp" alt="wolf-techonolgy" />
         <FontAwesomeIcon onClick={openMenu} className='text-white text-3xl cursor-pointer' icon={faBars} />
         </nav>
 

@@ -14,7 +14,7 @@ function contact({lang , language}) {
       <div className={lang ? '' : 'flex flex-col items-end text-right'}>
       <h1 className='mt-11 w-48 text-3xl font-semibold'>{lang ?'Get Started' : 'ابدا الان'}</h1>
       <p className='my-5 md:w-80 sm:w-72 font-normal mb-20 '>
-{lang ? 'We specialize in IT support, backup, custom solutions. If your goal is to find the best IT services for your business do not worry you came to the right place. Contact us and we will do our best to provide you with everything your business need' : 'نحن متخصصون في دعم تكنولوجيا المعلومات والنسخ الاحتياطي والحلول المخصصة. إذا كان هدفك هو العثور على أفضل خدمات تكنولوجيا المعلومات لعملك ، فلا تقلق ، فقد وصلت إلى المكان الصحيح. اتصل بنا وسنبذل قصارى جهدنا لتزويدك بكل ما تحتاجه عملك'}</p>
+{lang ? 'We specialize in IT support, backup, and custom solutions. If your goal is to find the best IT services for your business, do not worry, you are in the right place. Contact us we will do our best to provide you with everything your business need.' : 'نحن متخصصون في دعم تكنولوجيا المعلومات والنسخ الاحتياطي والحلول المخصصة. إذا كان هدفك هو العثور على أفضل خدمات تكنولوجيا المعلومات لعملك ، فلا تقلق ، فقد وصلت إلى المكان الصحيح. اتصل بنا وسنبذل قصارى جهدنا لتزويدك بكل ما تحتاجه عملك'}</p>
      </div>
      </Navbar>
 
@@ -33,7 +33,7 @@ function contact({lang , language}) {
         <p>what is the best technology to use for my business</p>
         <p className='mt-2'>trying to make the best investment to save money and time</p>
         </div>
-        <h3 className='w-60 text-center text-sm'>we can help you by taking all the unnecessary thinking so you can focus on your business</h3>
+        <h3 className='w-60 text-center text-sm'>We can help you by managing your business IT needs so you can focus on your business.</h3>
       </div> 
       :
 
